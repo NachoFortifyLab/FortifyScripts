@@ -1,2 +1,61 @@
-# FortifyUtilities
-My Fortify Utilities Repo.
+# 🛡️ FortifyScripts
+
+A collection of automation scripts designed to simplify and optimize the **installation and upgrade** tasks across all **Fortify On-Premise Components** of **OpenText Application Security**, including:
+
+- 🏢 **OpenText Application Security (Fortify Software Security Center (SSC))**.
+- 💻 **OpenText Static Application Security Testing (Fortify Static Code Analyzer (SCA)**.
+- 🌐 **OpenText Dynamic Application Security Testing (Fortify WebInspect)**.
+- ⚙️ **OpenText Fortify ScanCentral Controller (SAST & DAST)**.
+- 🧰 **OpenText Static Application Security Testing Application Security Tools (Fortify Tools)**.
+
+## ⚡ Overview
+
+These scripts automate key DevSecOps and infrastructure activities such as:
+
+- ☕ **Installing Java** (any version required for the Fortify release version you are going to install/upgrade).
+- 🪄 **Installing Helm** (latest version).
+- 🔒 **Installing, configuring (Service, SSL & memory) for Apache Tomcat (9 or 10)** for Fortify SSC deploy on it.
+- 🐬 **Installing MySQL 8.0 Client** on a Linux system.
+- 🧱 **Creating a MySQL Server Docker Container** to host the **Fortify SSC database**.
+- 🧾 **Creating an OpenText eDirectory Docker Container** for **LDAP authentication to Fortify SSC**.
+- 🌉 **Creating an OpenText eDirectory API Docker Container** providing **API REST and LDAP endpoints to the eDircetory Docker Container**.
+- 🧭 **Creating an OpenText IdentityConsole Docker Container** to manage **directory data of the eDircetory Docker Container**.
+- ☁️ **Pulling the binary installation files from an OneDrive backup Sharepoint** from Fortfy SSC, eDirectory and IdentityConsole.
+- 🪣 **Deploying a Private Docker Registry** to storage Fortify Lab server related Docker Images.
+  - [FrontEnd (Joxit UI)](https://github.com/Joxit/docker-registry-ui)  
+  - [BackEnd (Docker Hub Registry)](https://hub.docker.com/_/registry)
+- 🐳 **Pulling all Fortify Docker Images** from **Fortify Docker Hub** into the **Private Docker Registry**
+- **Installing Fortify Command Line Interface (FCLI)** latest version in a Linux system.
+
+---
+
+## 🧠 Prerequisites
+
+Before using the scripts, ensure you have:
+
+- 🖥️ A **fully functional Linux Server** with:
+  - 🌐 **Internet connection**.
+  - 🪟 **Graphical User Interface (GUI)**.
+  - 🔑 **SSH access**.
+- 🌍 Any **web browser** installed.
+- 🐳 **Docker** properly installed and running.
+
+---
+
+## 🔗 Useful References
+
+- [📘 OpenText Application Security (Fortify Software Security Center (SSC) documentation](https://www.microfocus.com/es-es/documentation/fortify-software-security-center/)
+- [🧩 Fortify Command Line Interface (FCLI) – GitHub Repository](https://github.com/fortify/fcli)
+- [🐳 Docker Hub – Fortify Images](https://hub.docker.com/orgs/fortifydocker/repositories)
+- [🔐 OpenText NetIQ Products (eDirectory & IdentityConsole) documentation](https://docs.microfocus.com)
+
+---
+
+🧾 License
+
+This repository is intended for internal automation and integration use with OpenText Fortify products.
+Ensure compliance with your organization’s licensing and security policies.
+
+---
+
+🛠️ Maintained by Ignacio Perez Civeira – OT-Latam Support Consultant Engineer
